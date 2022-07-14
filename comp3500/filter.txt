@@ -1,0 +1,16 @@
+Each image entered, the parameters, and the output file name:
+
+image1.gif - horizontal filter, 20 group size, output1.gif
+image1.jpg - vertical filter, 15 group size, output1.jpg
+image1.png - horizontal filter, 5 group size, output1.png
+image2.gif - horizontal filter, 3 group size, output2.gif
+image2.jpg - vertical filter, 17 group size, output2,jpg
+image2.png - vertical filter, 21 group size, output2.png
+image3.gif - horizontal filter, 7 group size, output3.gif
+image3.jpg - vertical filter, 19 group size, output3.jpg
+image4.gif - vertical filter, 34 group size, output4.gif
+image4.jpg - horizontal filter, 27 group size, output4.jpg
+image4.png - horizontal filter, 24 group size, output4.png
+image5.gif - vertical filter, 8 group size, output5.gif
+image5.jpg - horizontal filter, 28 group size, output5.jpg
+image5.png - vertical filter, 34 group size, output5.png

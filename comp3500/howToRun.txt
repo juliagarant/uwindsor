@@ -1,0 +1,18 @@
+Start command prompt (Windows)
+    cd Julia-Garant_project
+    cd src
+    javac filter.java
+    java filter
+
+*Program starts*
+
+Enter the image name you want to edit:
+    image1.gif
+Enter output name:
+    anythingIWantWithoutAnExtension
+Choose "horizontal" or "vertical" filter type:
+    horizontal
+Enter the desired group size(N):
+    7
+
+*End of program*

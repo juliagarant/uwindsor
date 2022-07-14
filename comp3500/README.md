@@ -1,4 +1,4 @@
-# COMP3500
+# COMP3500 - Introduction to Multimedia Systems
 Final project for COMP3500
 
 It's messy, and its all in main. I didn't make a folder for images or outputs because my professor is going to be accessing it through command line I assume.

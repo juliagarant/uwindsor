@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Lecture 9</title>
+    <style media="screen">
+      /*NAME SELECTOR:
+      Applies styling to specific HTML elements based on the name of the tag*/
+      h1{color:darkred;}
+      div {font-size:16px;} /* target = 1 */
+      p {color:midnightblue;} /* target = 2 */
+      span {font-weight:bold;} /* target = 3 */
+
+    /* GROUP SELECTOR:
+    Applies styling to a collection of target HTML elements. */
+  /*  div, p, span, #div, .p01 {font-weight:bold;}
+    span {color:yellow;} */
+/*------------------------------------------------------------------*/
+    /*ATTRIBUTE NAME-VALUE SELECTOR 1:
+    Applies styling to HTML elements matching the attribute’s name.*/
+    /*[class] {font-weight:bold;}*/
+
+    /*ATTRIBUTE NAME-VALUE SELECTOR 2:
+    Applies styling to HTML elements where its attribute’s value EQUALS the specified text.*/
+    /*[width="140px"]{border:5px solid yellow;}*/
+
+    /*ATTRIBUTE NAME-VALUE SELECTOR 3:
+    Applies styling to HTML tags where its attribute’s value CONTAINS the specified character(s) or text*/
+    /*[class*="01"]{font-size:32px;}*/
+
+    /*ATTRIBUTE NAME-VALUE SELECTOR 4:
+    Applies styling to HTML tags where its attribute’s value STARTS with the specified character(s) or text.*/
+    /*[class^="s"]{font-size:42px;}*/
+
+    /*ATTRIBUTE NAME-VALUE SELECTOR 5:
+    Applies styling to HTML tags where its attribute’s value ENDS with the specified character(s) or text.*/
+    /*[class$="1"] {font-size:52px;}*/
+    /*OR*/
+    [alt$="go"] {border:5px solid blue;}
+/*------------------------------------------------------------------*/
+    /*COMBINATION SELECTORS:*/
+    /*Descendant Selector:
+        Applies styling to the IMMEDIATE & NESTED offspring HTML elements of the target tag.*/
+    /*div i {font-weight:bold;}*/
+
+    /*Child Selector:
+        Applies styling to the IMMEDIATE offspring HTML elements of the target tag.*/
+    /*div > i {font-weight:bold;}*/
+
+    /*General-Sibling Selector:
+        Applies styling to ALL IMMEDIATE brothers/sisters (with same parent) HTML elements of the target tag.*/
+    /*div ~ i {font-weight:bold;}*/
+
+    /*Adjacent-Sibling Selector:
+        Applies styling to the MOST IMMEDIATE brother/sister (with same parent) HTML elements of the target tag.*/
+    div + i {font-weight:bold;}
+    </style>
+    <link rel="stylesheet" type="text/css" href="styleSheet.css">
+
+  </head>
+  <body>
+
+    <h1>Lecture 9 COMP2057</h1>
+    <p>Above is done using the style tag in internal mode.</p>
+    <h2>Todays class is about learning CSS. </h2>
+    <p>Above is done through an external CSS document using the "link" tag.</p>
+
+    <p style="color:darkred">Text with dark red colour. This uses the style attribute of an HTML element.</p>
+    <hr>
+
+    <!--These lines are being affected by the lines in the head tag(div, p, and span)-->
+    <!--
+    <div id="div01">Test data in block</div>
+    <p class="p01">Test data in paragraph</p>
+    <span>Test data in inline mode</span>
+    -->
+
+    <img width="140px" alt="UWindsor Logo" src="https://bit.ly/2vIzWD8" height="140px" />
+    <p class="s01 p01">Paragraph text</p>
+    <span class="s01">Inline-mode text</span>
+    <hr>
+<!------------------------------------------------------------------>
+
+    <div>
+      <i>Italicized text</i>
+    </div>
+    <i>Italicized text ONLY<br></i>
+    <i><u>Italicized & underlined<br></u></i>
+    <u><i>Underlined & italicized<br></i></u>
+    <blockquote>Block quote</blockquote>
+
+  </body>
+</html>

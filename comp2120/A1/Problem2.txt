@@ -1,0 +1,40 @@
+In doing this question I realise that Java will temporarily set integers
+to type double to refrain from any errors in mathematical operations.
+
+double x = -3.5;
+double y = 1.9;
+int n = 23;
+int m = 14;
+
+a. x - n / y + x + (n * y)
+(-3.5) - 23 / 1.9 + (-3.5) + (23 * 1.9)
+= 24.5947
+
+b. n / m + n % m
+23 / 14 + 23 % 14
+= 10
+
+c. n % 2 + m % 3
+23 % 2 + 14 % 3
+= 3
+
+
+d. (m + n) / 3.0
+(14 + 23) / 3.0
+= 12.3333
+
+e. (n - m) / 3
+(23 - 14) / 3
+= 3
+
+f. (n – x) / 3
+(23 - (-3.5)) / 3
+= 8.8333
+
+g. 1 - (1 - (1 - n))
+1 - (1 - (1 - 23))
+= -22
+
+h. m % 10 + (m – (n % 10))
+14 % 10 + (14 – (23 % 10))
+= 15

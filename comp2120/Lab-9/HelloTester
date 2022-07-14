@@ -1,0 +1,38 @@
+package Lab9;
+/*
+Lab 9 for COMP2110
+Julia Garant
+104987469
+Mar 20 2020
+ */
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class HelloTester {
+    public static void main(String[] args) throws FileNotFoundException {
+        //create File
+        //File hello = new File("hello.txt");
+        try {
+            //write to file "hello.txt", creates file if one does not already exist
+            PrintWriter out = new PrintWriter("hello.txt");
+            out.println("Hello, World!");
+            out.close();
+
+            Scanner in = new Scanner(new File("hello.txt"));//Scanner can throw a FileNotFoundException
+
+            while (in.hasNextLine()) {   //To make sure all lines have been read
+                String result = in.nextLine();  //nextLine() consumes the newline char, can also throw NoSuchElementException
+                System.out.println(result);
+            }
+            in.close();
+
+        }//IOException contains subclasses like FileNotFoundException and NoSuchElementException
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}

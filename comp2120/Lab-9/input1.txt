@@ -1,0 +1,6 @@
+String
+Hey!
+Hello!
+8
+Welcome
+Bye

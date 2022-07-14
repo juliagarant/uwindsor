@@ -1,0 +1,76 @@
+<!--Following along in class so I actually pay attention -->
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lecture 7</title>
+  </head>
+  <body>
+    <h1>Lecture 7 COMP2057</h1>
+    <p>Todays class is about HTML.</p>
+
+    <details open="open">
+      <!--Used to define a collapsible (or toggle) data container on a HTML webpage -->
+      <summary>Multimedia Things</summary>
+      <!--This is the body of the 'Details' tag-->
+
+      <!--Used to append an image or a picture to a HTML webpage-->
+      <img width="140px" alt="UWindsor Logo"
+      src="https://bit.ly/2vIzWD8" height="140px"/>
+      <br/>
+
+      <!--Used to create an image with clickable regions within a HTML webpage
+      This actually made a uwindsor logo that shifts with the size of the window-->
+      <img src="https://bit.ly/2vIzWD8"usemap="#map1" / >
+      <map name="map1"><area shape="rect" coords="0,0,86,93" href="www.uwindsor.ca"/></map>
+      <br/>
+
+      <!--Used to create a link or hyperlink in a HTML webpage.-->
+      <a href="https://bit.ly/2vIzWD8"download="new fname" rel="" target="blank">UWin Logo</a>
+      <br/>
+
+      <!--Used to include an audio recording or file onto a HTML webpage-->
+      <audio autoplay="autoplay", controls="controls">
+        <source src="https://bit.ly/37Fs5n6" type="audio/mpeg"/>
+        Unsupported HTML tag
+      </audio>
+      <br/>
+
+      <!--Includes a video file onto a webpage-->
+      <video autoplay="autoplay", controls="controls">
+          <source src="https://bit.ly/39LvHFE" type="video/mp4"/>
+            Unsupported HTML tag
+      </video>
+      <br/>
+
+      <!--Used to embed multimedia (audio, video, flash, etc.) content onto a webpage-->
+      <!--I dont think this one is working properly-->
+      <embed src="https://bit.ly/39LvHFE" width="400px" height="400px" />
+      <br/>
+
+  </details>
+
+
+  <!--Used to define a group of related HTML elements on a webpage-->
+  <fieldset  form="form001">
+      <legend>Not Multimedia Things</legend>
+      <!--This is the body of the 'fieldset' tag-->
+
+      <!--Used to include an abbreviation onto a HTML webpage-->
+      <abbr title="University of Windsor">UWindsor</abbr>
+      <br/>
+
+      <!--Used to format an address included on a HTML webpage-->
+      <address style="color:red; display:block;">
+      401 Sunset Avenue <br/>
+      Windsor, ON N9B 3P4 <br/>
+      </address>
+      <br/>
+
+      <!--Used to define a clickable button on a HTML webpage-->
+      <button type="button">Click Button</button>
+      <br/>
+
+  </fieldset>
+</body>
+</html>

@@ -1,0 +1,50 @@
+
+/* --Task 1-- */
+.signup{
+  background-color: orange;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 435px;
+  min-width: 360px;
+  color: gold;
+}
+
+.signup h3{
+  margin: 0px !important;
+  padding: 10px;
+}
+.innerForm{
+  background-color: #222536;
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 20px;
+  text-align: right;
+  color: #ccd236;
+}
+.buttons{
+  background-color: orange;
+  text-align: right;
+  padding: 10px;
+}
+.buttons #submit{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.buttons #cancel{
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

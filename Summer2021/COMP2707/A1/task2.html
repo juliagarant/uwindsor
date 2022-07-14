@@ -1,0 +1,170 @@
+<!-- Task 2
+Julia Garant   May 27 2021 -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order Form</title>
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body id="task2">
+    <!-- Allows navigation between pages -->
+    <nav>
+      <a href="index.html">Task 3</a> |
+      <a href="task2.html">Task 2</a> |
+      <a href="task1.html">Task 1</a>
+    </nav>
+
+    <div class="form">
+
+      <h2>Land of Boxes Order Form</h2>
+
+      <!-- Task 2 form -->
+      <form>
+        <!-- Basic stuff -->
+        <label for="fname">Name:</label>
+        <input type="text" id="fname" name="fname">
+        <br>
+
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br>
+
+        <br>
+        <table>
+            <tr>
+                <td>
+                  <label for="address">Address:</label>
+                </td>
+                <td>
+                  <textarea id="address" name="address"> </textarea>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+        <label for="post">Postal Code:</label>
+        <input type="text" id="post" name="post">
+        <br>
+
+        <!-- Product table -->
+        <br>
+        <table id="products" border=1>
+         <tr>
+           <th>Product</th>
+           <th>Part Number</th>
+           <th>Quantity</th>
+           <th>Unit Price</th>
+           <th>Subtotal</th>
+         </tr>
+         <tr>
+           <td >EconoBox</td>
+           <td>LB100</td>
+           <td> <input type="text" id="quant" > </td>
+           <td>R5</td>
+           <td> <input type="text" id="subtot" > </td>
+         </tr>
+         <tr>
+           <td >Standard Box</td>
+           <td>LB200</td>
+           <td> <input type="text" id="quant" > </td>
+           <td>R10</td>
+           <td> <input type="text" id="subtot" > </td>
+         </tr>
+         <tr>
+           <td >Premium BoxTD</td>
+           <td>LB300</td>
+           <td> <input type="text" id="quant" > </td>
+           <td>R15</td>
+           <td> <input type="text" id="subtot" > </td>
+         </tr>
+         <tr>
+           <td >Deluxe BoxTD</td>
+           <td>LB400</td>
+           <td> <input type="text" id="quant" > </td>
+           <td>R20</td>
+           <td> <input type="text" id="subtot" > </td>
+         </tr>
+         <tr>
+           <td >Super Deluxe BoxTD</td>
+           <td>LB500</td>
+           <td> <input type="text" id="quant" > </td>
+           <td>R30</td>
+           <td> <input type="text" id="subtot" > </td>
+         </tr>
+         <tr>
+            <td style="text-align: right;" colspan="4">Total:
+            <td><input type="text"></td>
+          </tr>
+        </table>
+
+        <!-- Credit card -->
+        <table id="credit">
+          <th>Credit Card Details</th>
+          <tr>
+            <td>
+              <label for="card">Card Type:</label></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="card" id="mast">
+              <label for="mast">Mastercard</label>
+            </td>
+            <td>
+              <label for="num">Card Number</label>
+              <input type="number"id="num">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="card" id="visa">
+              <label for="visa">Visa</label>
+            </td>
+            <td>
+              <label for="exp">Expiry Date</label>
+              <input type="month" id="exp">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="card" id="amex">
+              <label for="amex">American Express</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="card" id="diner">
+              <label for="diner">Diners Club</label>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Delivery -->
+        <table>
+            <tr>
+                <td>
+                  <label for="daddress">Delivery Address:</label>
+                </td>
+                <td>
+                  <textarea id="daddress"></textarea>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Buttons -->
+        <br>
+        <input type="submit" value="Send order">
+        <input type="reset" value="Clear form">
+      </form>
+    </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Julia Garant">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up</title>
+
+  </head>
+  <body>
+
+    <div class="signup">
+      <!-- Valid minimal HTML code 4pts -->
+      <h3>Sign Up :)</h3>
+      <!-- Valid JavaScript in the same HTML file with the requested functionality 7pts -->
+      <script>
+        function checkName(){
+          var name = event.target.value;
+          for (var i = 0, l = name.length; i < l ; i++) {
+            n = name.charCodeAt(i);
+            if (!(n > 64 && n < 91) && !(n > 96 && n < 123)){ //(A-Z) (a-z)
+              alert("Only letters!");
+              break;
+            }
+          }
+        }
+      </script>
+
+      <!-- Form with all its minimal components 4pts -->
+      <form>
+        <div class="innerForm">
+          <table class="innerForm">
+              <tr> <!-- First Name -->
+                <td>
+                  <label for="fname">First Name</label>
+                </td>
+                <td>
+                  <input type="text" id="fname" placeholder="Enter Name" required onchange="checkName()" >
+                </td>
+              </tr>
+
+              <tr> <!-- Terms -->
+                <td style="text-align: right;" colspan="2">
+                  <input type="checkbox" id="check" name="check" required>
+                  <label for="check">I agree to the terms</label>
+                </td>
+              </tr>
+              <tr> <!-- Terms -->
+                <td style="text-align: right;" colspan="2">
+                  <input type="checkbox" id="check" name="check" required>
+                  <label for="check">I agree to the other terms</label>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+        <div class="buttons">
+            <input id="submit" type="submit" value="Submit">
+        </div>
+
+      </form>
+
+    </div> <!-- signup -->
+
+  </body>
+</html>

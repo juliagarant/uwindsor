@@ -1,0 +1,66 @@
+<!-- Kobti will not grade uncommented code -->
+
+<!-- Julia Garant   May 16 2021 -->
+
+<!--Page 3: (linked from the home page) contains links to interesting resources
+around the web such as web development tools, editors, validators, reference materials,
+etc... (at least 10 links).-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- author name, keywords (at least 3), and description -->
+    <meta name="description" content="Assignment 1 for COMP 3340">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Julia Garant">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resources</title>
+
+    <!-- CSS style tag -->
+    <style media="screen">
+      nav{
+        font-size:20px;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <!-- Allows navigation between pages -->
+    <nav>
+     <a href="index.html">Home</a> |
+     <a href="resume.html">Resume</a> |
+     <a href="resources.html">Resources</a>
+    </nav>
+
+    <!-- Display current date and time -->
+    <h1 id="datetime"></h1>
+
+    <script>
+      var dt = new Date();
+      document.getElementById("datetime").innerHTML=dt;
+      //document.getElementById("datetime").innerHTML=dt.toLocaleString;
+    </script>
+
+    <!-- contains links to interesting resources
+    around the web such as web development tools, editors, validators, reference materials,
+    etc... (at least 10 links) -->
+    <ol>
+     <li> <a href="https://www.w3schools.com/html/">W3 Schools HTML</a></li>
+     <li> <a href="https://www.w3schools.com/js/">W3 Schools JavaScript</a></li>
+     <li> <a href="https://www.w3schools.com/css/">W3 Schools CSS</a></li>
+     <li> <a href="https://www.w3schools.com/cssref/css_colors.asp">W3 Schools CSS Colour Names</a></li>
+     <li> <a href="https://validator.w3.org/">Markup Validator</a></li>
+
+     <li> <a href="https://www.w3schools.com/php/">W3 Schools PHP</a></li>
+     <li> <a href="https://www.w3schools.com/sql/">W3 Schools SQL</a></li>
+     <li> <a href="https://www.linkedin.com/learning/">LinkedIn Learning</a> offered to UWindsor CS students.</li>
+     <li> <a href="https://stackoverflow.com/">Stack Overflow</a> for any code questions you may have.</li>
+     <li> <a href="https://www.onlineinterviewquestions.com/">Interview Questions!</a></li>
+    </ol>
+
+  </body>
+</html>

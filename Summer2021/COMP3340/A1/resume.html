@@ -1,0 +1,89 @@
+<!-- Kobti will not grade uncommented code -->
+
+<!-- Julia Garant   May 16 2021 -->
+
+<!--Page 2: (linked from the home page) contains a brief online Resume
+about what you have accomplished so far.-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- author name, keywords (at least 3), and description -->
+    <meta name="description" content="Assignment 1 for COMP 3340">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Julia Garant">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resume</title>
+
+    <!-- CSS style tag -->
+    <style media="screen">
+      nav{font-size:20px;}
+    </style>
+
+  </head>
+  <body style="background-color: lightsalmon">
+
+    <!-- Allows navigation between pages -->
+    <nav>
+     <a href="index.html">Home</a> |
+     <a href="resume.html">Resume</a> |
+     <a href="resources.html">Resources</a>
+    </nav>
+
+    <!-- Display current date and time -->
+    <h1 id="datetime"></h1>
+
+    <script>
+      var dt = new Date();
+      document.getElementById("datetime").innerHTML=dt;
+      //document.getElementById("datetime").innerHTML=dt.toLocaleString;
+    </script>
+
+    <!-- Brief online resume -->
+
+    <dl>
+      <dt> <b>University</b> </dt>
+      <br>
+      <dd><img alt="UWindsor Logo" src="https://bit.ly/2vIzWD8" height="100" width="320"/></dd>
+      <dd> <b>Univeristy of Windsor</b> </dd>
+      <dd> <i>Currently Attending</i>  September 2018 - Present </dd>
+      <dd>
+        <ul>
+          <li>Dean's Honour Roll Recipient</li>
+        </ul>
+      </dd>
+      <br>
+
+      <dd><img alt="UWindsor CSS Logo" src="images\csslogo.png" height="100"/></dd>
+      <dd>Have maintained a position on UWindsor's CSS for 3 consecutive years</dd>
+      <dd>Responsibilities:
+        <ul>
+         <li>Coordinate planning and executing strategies to grow the Computer Science Society</li>
+         <li>Increase income by means of fundraising and promotion</li>
+         <li>Oversee growth of society presence on campus by means of marketing, social media and promoting events</li>
+        </ul>
+      </dd>
+
+      <br>
+
+      <dt> <b>Work Experience</b> </dt>
+      <br>
+      <dd><img alt="Audacia BioScience Logo" src="images\LogoAudaciaBioscienceTrans.png" height="70"/></dd>
+      <dd> <b>Audacia BioScience</b> </dd>
+      <dd> <i>Junior Developer</i>  May 2020 - August 2020 </dd>
+      <dd></dd>
+      <dd>Responsibilities:
+        <ul>
+         <li>Designed mock-ups for new webpages and applications using Adobe XD</li>
+         <li>Developed websites using JavaScript, HTML, CSS, and PHP</li>
+         <li>Created a secure login page for staff and investors using PHP</li>
+         <li>Designed and tested multiple dynamic database tables in SQL</li>
+        </ul>
+      </dd>
+    </dl>
+
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!-- Kobti will not grade uncommented code -->
+
+<!-- Julia Garant   May 16 2021 -->
+
+<!--Create 1 page with a menu to 2 other pages.
+Page 1: (home page) contains your photo, a brief bio,
+and a paragraph explaining why you want to learn web development.-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- author name, keywords (at least 3), and description -->
+    <meta name="description" content="Assignment 1 for COMP 3340">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Julia Garant">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home</title>
+
+    <!-- CSS style tag -->
+    <style media="screen">
+      nav{
+        font-size:20px;
+        text-align: left;
+      }
+      #para{
+         border-radius: 16px;
+         border: 1px solid;
+         padding: 8px;
+         margin: 20px;
+      }
+      img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+
+  </head>
+  <body style="background-color: lavender; text-align: center; ">
+
+    <!-- Allows navigation between pages -->
+    <nav>
+     <a href="index.html">Home</a> |
+     <a href="resume.html">Resume</a> |
+     <a href="resources.html">Resources</a>
+    </nav>
+
+    <!-- Display current date and time -->
+    <h1 id="datetime"></h1>
+
+    <script>
+      var dt = new Date();
+      document.getElementById("datetime").innerHTML=dt;
+      //document.getElementById("datetime").innerHTML=dt.toLocaleString;
+    </script>
+
+    <!-- Photo of myself -->
+    <img src="images\Julia.jpg" alt="Photo of Julia Garant" height="140">
+    <br>
+
+    <!-- Brief biography -->
+    <div id="para" style="background-color: lightcyan;">
+      <p>My name is Julia Garant. This is the first website we're creating for COMP 3340. I have a bit of web development experience I will elaborate on in the next paragraph. I'm starting my fourth year in Honours Computer Science with a specialization in multimedia. I have also completed a math minor.</p>
+    </div>
+
+    <!-- Paragraph about why I'm learning web dev -->
+    <div id="para" style="background-color: mediumpurple;">
+      <p>I have a bit of web development experience from courses like COMP2057. I completed a coop experience in summer 2020 where I was introduced to UX/UI which allowed me to design app features for Audacia BioScience. In the latter months I was able to contribute to a webpage for them involving php and html. The page was designed to allow only specific users to see the information and allow admin users to update the page without having any SQL knowledge.</p>
+    </div>
+
+    <div>
+      <a href="https://github.com/juliagarant/covid-website">Audacia BioScience work</a> |
+      <a href="https://github.com/juliagarant/Summer2021"> Current classwork</a>
+    </div>
+
+  </body>
+</html>

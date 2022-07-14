@@ -1,0 +1,103 @@
+nav{
+  font-size:20px;
+  text-align: left;
+}
+/* --Task 3-- */
+#task3{
+  background-color: lightcoral;
+  text-align: center;
+}
+p.index{
+  border-radius: 16px;
+  border: 1px solid;
+  padding: 15px;
+  margin: 20px;
+}
+#pg1{
+  background-color: lightcyan;
+}
+#pg2{
+  background-color: lavender;
+}
+#pg3{
+  background-color: burlywood;
+}
+/* --Task 2-- */
+#task2{
+  background-color: lightgray;
+}
+.form{
+    background-color: white;
+    border-style: ridge;
+    padding: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    max-width: 684px;
+    min-width: 540px;
+}
+
+.form h2{
+  color: orange;
+}
+#address, #daddress{
+  padding: 10px;
+}
+#credit{
+  border-spacing: 25px;
+}
+#products{
+  border-style: solid;
+  border-spacing: 10px;
+}
+#products td, th{
+  padding: 2px;
+}
+/* --Task 1-- */
+.signup{
+  background-color: orange;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 435px;
+  min-width: 360px;
+  color: gold;
+}
+
+.signup h3{
+  margin: 0px !important;
+  padding: 10px;
+}
+.innerForm{
+  background-color: #222536;
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 20px;
+  text-align: right;
+  color: #ccd236;
+}
+.buttons{
+  background-color: orange;
+  text-align: right;
+  padding: 10px;
+}
+.buttons #submit{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.buttons #cancel{
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
